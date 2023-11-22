@@ -1,0 +1,28 @@
+@baseUrl = http://localhost:3000
+
+### Pesquisa todos os cursos
+GET {{baseUrl}}/api/courses
+
+### Pesquisa curso específico
+GET {{baseUrl}}/api/courses/655e707569e1bae84b8f2327
+
+### Cria uma nova conta
+POST {{baseUrl}}/api/courses
+Content-Type: application/json
+
+{
+"name": "Agronomia",
+"description": "Curso Superior de Agronomia",
+"url": "http://ifrs.edu.br/bento"
+}
+
+### Altera a conta com id=1
+PUT {{baseUrl}}/api/courses/655e738645a37cca969b7b02
+Content-Type: application/json
+
+{
+"name": "Bacharel em Agronomia"
+}
+
+### Exclui uma conta específica
+DELETE {{baseUrl}}/api/courses/655e738645a37cca969b7b02
